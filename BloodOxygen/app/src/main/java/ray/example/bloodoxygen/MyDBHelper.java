@@ -1,12 +1,15 @@
 package ray.example.bloodoxygen;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class MyDBHelper extends SQLiteOpenHelper {
-    public static final String DB_NANE="database_user_record";
-    public static final String Table_User_NANE="table_user";
+
+    public static final String DB_NANE="database_weight_record";//数据库名
+    public static final String Table_User_NANE="table_user";//用户表
 
     public MyDBHelper(Context context) {
         super(context, DB_NANE, null, 1);
@@ -15,7 +18,7 @@ public class MyDBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        //
+        //用户表
         db.execSQL("create table if not exists "+Table_User_NANE+"("
                 +"UserID"+" interger primary key,"
                 +"UserRealName"+" varchar(255),"
@@ -25,7 +28,39 @@ public class MyDBHelper extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+    public void onUpgrade(SQLiteDatabase MyDB, int oldVersion, int newVersion) {
+        MyDB.execSQL("drop Table if exists users");
+    }
+
+    // constructor for inserting data into the database
+    public Boolean insertData(String username, String password) {
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("username", username);
+        contentValues.put("password", password);
+        long result = MyDB.insert("users", null, contentValues);
+        if (result == -1) return false;
+        else
+            return true;
+    }
+    // constructor for checking username
+    public Boolean checkusername(String username){
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        Cursor cursor = MyDB.rawQuery("select * from users where username= ?" ,new String[] {username} );
+        if (cursor.getCount()>0)
+            return  true;
+        else
+            return  false;
+
+    }
+    // constructor for checking password
+    public Boolean checkusernamepassword(String username, String password){
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        Cursor cursor = MyDB.rawQuery("select * from users where username= ? and password = ?" ,new String[] {username,password} );
+        if (cursor.getCount()>0)
+            return  true;
+        else
+            return  false;
 
     }
 }
