@@ -70,8 +70,8 @@ public class MainActivity extends AppCompatActivity implements TextWatcher {
         loginUserId = findViewById(R.id.et_s_name); // username
         loginUserPW = findViewById(R.id.et_s_pass); //password
         loginLoginButton = findViewById(R.id.bt_sign); //login button
-     //   loginError = findViewById(R.id.loginError); // dont know---------
-     //   loginToRegister = findViewById(R.id.loginToRegister); // dont know---------
+        loginError = findViewById(R.id.loginError); // dont know---------
+        loginToRegister = findViewById(R.id.loginToRegister); // dont know---------
         button_register = findViewById(R.id.bt_register);//register button
         myDBHelper = new MyDBHelper(this);
 
@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity implements TextWatcher {
 
                     Toast.makeText(MainActivity.this,"Please enter all fields",Toast.LENGTH_LONG).show();
                     Toasty.error(MainActivity.this, "Please enter all fields", Toast.LENGTH_SHORT, true).show();
+                    //Toast.makeText(getBaseContext(), "Reason can not be blank", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     Boolean checkuserpass = myDBHelper.checkusernamepassword(user,pass);
