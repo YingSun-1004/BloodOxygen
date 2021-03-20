@@ -9,33 +9,49 @@
     android:padding="20dp"
     android:background="@drawable/background">
 
+
     <TextView
-        android:id="@+id/Tv_1"
+        android:id="@+id/Qs_Tv1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="50dp"
-        />
-    <TextView
-        android:id="@+id/Text1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Welcome home"
-        android:layout_marginTop="50dp"
+        android:text="Welcome!Click the button below to quickly start the test"
+        android:layout_marginTop="5dp"
         android:layout_centerHorizontal="true"
         android:textSize="16sp"
         android:layout_margin="15dp"
         android:textColor="@color/white"
+        android:paddingBottom="20dp"
         />
     <TextView
+        android:id="@+id/Qs_Tv2"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:textSize="100dp"
+        android:layout_below="@id/Qs_Tv1"
+        android:gravity="center"
+        android:text="--%"
+        android:textColor="@color/word"
+        android:background="@drawable/textview_border"
+        />
+    <Button
+        android:id="@+id/Qs_Begin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login successful"
-        android:layout_marginTop="50dp"
-        android:layout_below="@id/Text1"
-        android:layout_centerHorizontal="true"
-        android:textSize="16sp"
-        android:layout_margin="15dp"
-        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:layout_below="@id/Qs_Tv2"
+        android:text="Press to Begin"/>
+    <TextView
+        android:id="@+id/Tv2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="30dp"
+        android:layout_below="@id/Qs_Begin"
+        android:text="Analysis:"
+        android:paddingLeft="10dp"
+        android:textColor="@color/word"
+        android:textStyle="bold"
+        android:background="@drawable/textview_border"
         />
+
 
 </RelativeLayout>
