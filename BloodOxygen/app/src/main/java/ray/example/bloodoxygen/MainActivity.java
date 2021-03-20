@@ -24,7 +24,7 @@ import es.dmoral.toasty.Toasty;
 public class MainActivity extends AppCompatActivity implements TextWatcher {
     //object variables
     EditText loginUserId,loginUserPW;
-    Button loginLoginButton,button_register;
+    Button loginLoginButton,button_register,button_quickstart;
     TextView loginError,loginToRegister;
 
     //Tags
@@ -74,6 +74,14 @@ public class MainActivity extends AppCompatActivity implements TextWatcher {
         loginToRegister = findViewById(R.id.loginToRegister); // dont know---------
         button_register = findViewById(R.id.bt_register);//register button
         myDBHelper = new MyDBHelper(this);
+        button_quickstart = findViewById(R.id.bt_quickStart);
+        button_quickstart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,Home_Page_Activity.class);
+                startActivity(intent);
+            }
+        });
 
         loginLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements TextWatcher {
                         Log.d(TAG3, "Database SQL: ");
                         Toast.makeText(MainActivity.this,"Sign in successfully",Toast.LENGTH_SHORT).show();
                         Toasty.success(MainActivity.this, "Congrats login successful!", Toast.LENGTH_SHORT, true).show();
-                        Intent intent = new Intent(getApplicationContext(),Home_Page_Activity.class);
+                        Intent intent = new Intent(getApplicationContext(),Test.class);
                         startActivity(intent);
 
                     }else{
