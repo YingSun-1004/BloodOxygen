@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BloodOxygen">
-        <activity android:name=".Home_Page_Activity"></activity>
+        <activity android:name=".NavigationActivity"></activity>
+        <activity android:name=".Tips" />
+        <activity android:name=".Add_Info_Page" />
+        <activity android:name=".User_Info" />
+        <activity android:name=".Home_Page_Activity" />
         <activity android:name=".Register" />
         <activity android:name=".Test" />
         <activity android:name=".MainActivity">

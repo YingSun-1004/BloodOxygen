@@ -41,7 +41,7 @@
         android:layout_below="@id/Qs_Tv2"
         android:text="Press to Begin"/>
     <TextView
-        android:id="@+id/Tv2"
+        android:id="@+id/Qs_Tv3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textSize="30dp"

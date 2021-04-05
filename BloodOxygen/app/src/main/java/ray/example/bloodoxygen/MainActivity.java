@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements TextWatcher {
                         Log.d(TAG3, "Database SQL: ");
                         Toast.makeText(MainActivity.this,"Sign in successfully",Toast.LENGTH_SHORT).show();
                         Toasty.success(MainActivity.this, "Congrats login successful!", Toast.LENGTH_SHORT, true).show();
-                        Intent intent = new Intent(getApplicationContext(),Test.class);
+                        Intent intent = new Intent(getApplicationContext(),NavigationActivity.class);
                         startActivity(intent);
 
                     }else{

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tips"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/background">
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:layout_marginTop="50dp"
+        android:text="Hello users. The following advice is based on your personal information."
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/Tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:textSize="30dp"
+        android:text="Tips:"
+        android:layout_below="@id/tv_user"
+        android:paddingLeft="10dp"
+        android:textColor="@color/word"
+        android:textStyle="bold"
+        android:background="@drawable/textview_border"
+        />
+    <Button
+        android:id="@+id/bt_back"
+        android:layout_width="110dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/Tv_tips"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_bt2"
+        android:text="BACK"
+        android:textSize="12dp" />
+</RelativeLayout>

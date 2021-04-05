@@ -5,15 +5,18 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 public class MyDBHelper extends SQLiteOpenHelper {
 
     public static final String DB_NANE="database_weight_record";
     public static final String Table_User_NANE="table_user";
 
+
     public MyDBHelper(Context context) {
         super(context, DB_NANE, null, 1);
     }
+
 
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -24,6 +27,8 @@ public class MyDBHelper extends SQLiteOpenHelper {
                 +"UserRealName"+" varchar(255),"
                 +"UserPassWord"+" varchar(255)"
                 +")");
+
+
 
     }
 
@@ -63,4 +68,6 @@ public class MyDBHelper extends SQLiteOpenHelper {
             return  false;
 
     }
+
+
 }
