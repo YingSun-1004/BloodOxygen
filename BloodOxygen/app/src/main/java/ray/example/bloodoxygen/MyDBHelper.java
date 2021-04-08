@@ -18,15 +18,17 @@ public class MyDBHelper extends SQLiteOpenHelper {
     }
 
 
+
     @Override
     public void onCreate(SQLiteDatabase db) {
+        db.execSQL("create Table users(username TEXT primary key,password TEXT)");
 
 
-        db.execSQL("create table if not exists "+Table_User_NANE+"("
-                +"UserID"+" interger primary key,"
-                +"UserRealName"+" varchar(255),"
-                +"UserPassWord"+" varchar(255)"
-                +")");
+//        db.execSQL("create table if not exists "+Table_User_NANE+"("
+//                +"UserID"+" interger primary key,"
+//                +"UserRealName"+" varchar(255),"
+//                +"UserPassWord"+" varchar(255)"
+//                +")");
 
 
 
@@ -34,6 +36,7 @@ public class MyDBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase MyDB, int oldVersion, int newVersion) {
+
         MyDB.execSQL("drop Table if exists users");
     }
 
