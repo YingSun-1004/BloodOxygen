@@ -77,6 +77,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             return true;
     }
     // constructor for checking name
+
+    /**
+     *
+     * @param name
+     * @return
+     */
     public Boolean checkName(String name){
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery("select * from  users where name= ?" ,new String[] {name} );
@@ -87,6 +93,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
     //Read data from table
+
+    /**
+     *
+     * @return
+     */
     Cursor readAllData(){
         String query = "select * from "+UI_TABLE_NAME;
         SQLiteDatabase db = this.getReadableDatabase();
