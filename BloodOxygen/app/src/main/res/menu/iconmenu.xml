@@ -16,7 +16,12 @@
         android:title="Assessments"/>
 
     <item
-        android:id="@+id/menu_logout"
+        android:id="@+id/menu_view_data"
         android:icon="@drawable/ic_baseline_power_settings_new_24"
-        android:title="Sign out"/>
+        android:title="View Data"/>
+
+  <item
+      android:id="@+id/menu_logout"
+      android:icon="@drawable/ic_baseline_power_settings_new_24"
+      android:title="Sign out"/>
 </menu>

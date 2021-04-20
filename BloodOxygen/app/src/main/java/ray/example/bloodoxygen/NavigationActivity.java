@@ -68,6 +68,12 @@ public class NavigationActivity extends AppCompatActivity {
                         startActivity(intent2);
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
+                    case R.id.menu_view_data:
+                        Toast.makeText(getApplicationContext(), "Assessment Panel is Open", Toast.LENGTH_SHORT).show();
+                        Intent intent3 = new Intent(getApplicationContext(), displaydata.class);
+                        startActivity(intent3);
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
                     case R.id.menu_logout:
 
                         AlertDialog.Builder builder = new AlertDialog.Builder(NavigationActivity.this);

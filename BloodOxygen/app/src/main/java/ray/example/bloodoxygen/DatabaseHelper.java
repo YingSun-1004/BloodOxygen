@@ -11,6 +11,11 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     public static final  String DATABASE_NAME = "userinfo_db";
@@ -33,8 +38,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create Table users(COLUMN_UI_ID TEXT primary key,COLUMN_UI_NAME TEXT,COLUMN_UI_AGE TEXT," +
-                "COLUMN_UI_GENDER TEXT,COLUMN_UI_HEIGHT TEXT,COLUMN_UI_WEIGHT TEXT)");
+        db.execSQL("create Table IF NOT EXISTS " + UI_TABLE_NAME + " (" + COLUMN_UI_ID + " TEXT primary key, " + COLUMN_UI_NAME + " TEXT, " + COLUMN_UI_AGE + " TEXT," +
+                COLUMN_UI_GENDER +  " TEXT, " + COLUMN_UI_HEIGHT + " TEXT, " + COLUMN_UI_WEIGHT + " TEXT)");
+        Log.d(TAG, db.toString());
+        db.execSQL("create table if not exists datas(id Long primary key,number varchar(10),create_time varchar(100))");
 //        String CREATE_TABLE_UIDATA = "CREATE TABLE " + UI_TABLE_NAME +
 //                " (" + COLUMN_UI_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
 //                + COLUMN_UI_NAME + " TEXT NOT NULL,"
@@ -57,10 +64,50 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("drop Table if exists users");
+        db.execSQL("drop Table if exists user_db");
+        db.execSQL("drop Table if exists datas");
 
 
     }
+
+    public Boolean insertData(String number){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        Long id = System.currentTimeMillis();
+        contentValues.put("id",id);
+        contentValues.put("number", number);
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+        String time = df.format(new Date());
+        contentValues.put("create_time",time);
+        long result = db.insert("datas", null, contentValues);
+        if (result == -1) return false;
+        else
+            return true;
+    }
+
+//    public List<DataBean_information> selectAllData(){
+//        List<DataBean_information> dataBeanList = new ArrayList<>();
+//        DataBean_information dataBean = new DataBean_information();
+//        //初始化头部
+//        dataBean.setCreateTime("测量时间");
+//        dataBean.setNumber("测量数据");
+//        dataBeanList.add(dataBean);
+//        dataBean = new DataBean_information();
+//
+//        SQLiteDatabase db = this.getWritableDatabase();
+//        //创建游标对象
+//        Cursor cursor = db.query("datas", null, null, null, null, null, "id ASC");
+//        //利用游标遍历所有数据对象
+//        while(cursor.moveToNext()){
+//            dataBean.setId(cursor.getLong(cursor.getColumnIndex("id")));
+//            dataBean.setNumber(cursor.getString(cursor.getColumnIndex("number")));
+//            dataBean.setCreateTime(cursor.getString(cursor.getColumnIndex("create_time")));
+//            dataBeanList.add(dataBean);
+//            dataBean = new DataBean_information();
+//        }
+//        return dataBeanList;
+//    }
+
     // constructor for inserting data into the database
     public Boolean insertUserInfoData(String name, String age, String sex, String height, String weight){
 
@@ -71,21 +118,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put("sex", sex);
         contentValues.put("height", height);
         contentValues.put("weight", weight);
-        long result = db.insert("users", null, contentValues);
+        long result = db.insert(UI_TABLE_NAME, null, contentValues);
         if (result == -1) return false;
         else
             return true;
     }
     // constructor for checking name
-
-    /**
-     *
-     * @param name
-     * @return
-     */
     public Boolean checkName(String name){
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery("select * from  users where name= ?" ,new String[] {name} );
+        db.execSQL("CREATE TABLE IF NOT EXISTS " + UI_TABLE_NAME + " (" + COLUMN_UI_ID + " TEXT primary key, " + COLUMN_UI_NAME + " TEXT, " + COLUMN_UI_AGE + " TEXT," +
+                COLUMN_UI_GENDER +  " TEXT, " + COLUMN_UI_HEIGHT + " TEXT, " + COLUMN_UI_WEIGHT + " TEXT)");
+        Cursor cursor = db.rawQuery("select * from  "  + UI_TABLE_NAME + " where name= ?" ,new String[] {name} );
         if (cursor.getCount()>0)
             return  true;
         else
@@ -93,19 +136,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
     //Read data from table
-
-    /**
-     *
-     * @return
-     */
     Cursor readAllData(){
         String query = "select * from "+UI_TABLE_NAME;
         SQLiteDatabase db = this.getReadableDatabase();
 
-        Cursor cursor = null;
+        /*Cursor cursor = null;
         if (db!= null){
             cursor = db.rawQuery(query,null);
-        }
-        return cursor;
+        }*/
+        //Cursor cursor = db.rawQuery(query,null);
+        return db.rawQuery(query,null);
     }
 }

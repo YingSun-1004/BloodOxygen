@@ -45,6 +45,7 @@ public class User_Info extends AppCompatActivity {
 
         save.setOnClickListener(new View.OnClickListener() {
 
+
             @Override
             public void onClick(View v) {
 
@@ -61,6 +62,7 @@ public class User_Info extends AppCompatActivity {
                 } else {
                     Boolean checkuser = Db.checkName(usernameinfo);
                     if (checkuser == false) {
+                        Log.d("Check User", "check user = false");
                         Boolean isInserted = Db.insertUserInfoData(usernameinfo, ageinfo, genderinfo, heightinfo, weightinfo);
                         if (isInserted == true) {
                             Log.d(TAG3, "Database SQL: ");
@@ -88,25 +90,25 @@ public class User_Info extends AppCompatActivity {
         SEX = new ArrayList<>();
         HEIGHT = new ArrayList<>();
         WEIGHT = new ArrayList<>();
-        StoreDataInArrays();
+        //StoreDataInArrays();
 
     }
-    void StoreDataInArrays(){
-        Cursor cursor = Db.readAllData();
-        if (cursor.getCount()==0){
-            Toast.makeText(this,"No data",Toast.LENGTH_SHORT).show();
-        }else {
-            while (cursor.moveToNext()){
-                NAME.add(cursor.getString(0));
-                AGE.add(cursor.getString(1));
-                SEX.add(cursor.getString(2));
-                HEIGHT.add(cursor.getString(3));
-                WEIGHT.add(cursor.getString(4));
-
-
-            }
-        }
-    }
+//    void StoreDataInArrays(){
+//        Cursor cursor = Db.readAllData();
+//        if (cursor.getCount()==0){
+//            Toast.makeText(this,"No data",Toast.LENGTH_SHORT).show();
+//        }else {
+//            while (cursor.moveToNext()){
+//                NAME.add(cursor.getString(0));
+//                AGE.add(cursor.getString(1));
+//                SEX.add(cursor.getString(2));
+//                HEIGHT.add(cursor.getString(3));
+//                WEIGHT.add(cursor.getString(4));
+//
+//
+//            }
+//        }
+//    }
 
 
 
