@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CovidInfo"
+    android:id="@+id/drawer"
+    tools:openDrawer="start"
+    android:background="@drawable/background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+        android:id="@+id/tv_covid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:layout_marginTop="50dp"
+        android:text="COVID-19 INFO"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+        <TextView
+        android:id="@+id/tv_covid1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/tv_covid"
+        android:text="@string/covid_info"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tv_covid2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/tv_covid1"
+                android:text="SYMPTOMS"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tv_covid3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/tv_covid2"
+                android:text="@string/covid_info1"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tv_covid4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/tv_covid3"
+                android:text="CORONAVIRUS PREVENTION DO'S"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tv_covid5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/tv_covid4"
+                android:text="@string/covid_info2"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_covid6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/tv_covid5"
+                android:text="CORONAVIRUS PREVENTION DONT'S"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tv_covid7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/tv_covid6"
+                android:text="@string/covid_info3"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/cardHomeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_covid7"
+                android:layout_margin="10dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_bt2"
+                android:text="Home"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

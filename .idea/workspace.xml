@@ -1,118 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1d99435-83b0-4a8a-8548-ae2b5657b39b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/BloodOxygen.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/androidTest/java/ray/example/bloodoxygen/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/Home_Page_Activity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/MyDBHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/Register.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/drawable-v24/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/drawable/bg_bt2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/drawable/bg_btn.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/layout/activity_home__page_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/layout/activity_register.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/layout/activity_test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/mipmap-xhdpi/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/mipmap-xhdpi/logo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/app/src/test/java/ray/example/bloodoxygen/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/BloodOxygen/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/androidTest/java/ray/example/bloodoxygen/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/androidTest/java/ray/example/bloodoxygen/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/Add_Info_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/Add_Info_Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/CustomAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/CustomAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/DataBean_information.java" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/DataBean_information.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/DatabaseHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/Home_Page_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/Home_Page_Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/MyDBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/MyDBHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/NavigationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/NavigationActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/Tips.java" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/Tips.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/User_Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/User_Info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/displaydata.java" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/java/ray/example/bloodoxygen/displaydata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/drawable/bg_bt2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/drawable/bg_bt2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/drawable/bg_btn.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/drawable/bg_btn.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/drawable/ic_baseline_assessment_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/drawable/ic_baseline_assessment_24.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/drawable/ic_baseline_dashboard_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/drawable/ic_baseline_dashboard_24.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/drawable/ic_baseline_home_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/drawable/ic_baseline_home_24.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/drawable/ic_baseline_power_settings_new_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/drawable/ic_baseline_power_settings_new_24.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/drawable/textview_border.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/drawable/textview_border.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/activity_add__info__page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/activity_add__info__page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/activity_home__page_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/activity_home__page_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/activity_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/activity_navigation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/activity_register.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/activity_test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/activity_test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/activity_tips.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/activity_tips.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/activity_user__info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/activity_user__info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/displaydata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/displaydata.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/displaydataadapter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/displaydataadapter.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/navheader.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/layout/navheader.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/menu/iconmenu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/menu/iconmenu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/app/src/test/java/ray/example/bloodoxygen/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/app/src/test/java/ray/example/bloodoxygen/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BloodOxygen/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/BloodOxygen/settings.gradle" afterDir="false" />
-    </list>
+    <list default="true" id="f1d99435-83b0-4a8a-8548-ae2b5657b39b" name="Default Changelist" comment="Final project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,6 +35,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RunManager">
@@ -150,6 +59,29 @@
       <option name="presentableId" value="Default" />
       <updated>1619713215988</updated>
     </task>
+    <task id="LOCAL-00001" summary="Final project">
+      <created>1619713286727</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619713286727</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Final project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final project" />
   </component>
 </project>

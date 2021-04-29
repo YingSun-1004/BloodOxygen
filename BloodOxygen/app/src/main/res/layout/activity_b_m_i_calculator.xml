@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BMICalculator"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI CALCULATOR"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="30dp">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HEIGHT"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:inputType="numberDecimal"
+            >
+        </TextView>
+        <EditText
+            android:id="@+id/et_ht"
+            android:layout_width="95dp"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:hint="CM"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:layout_marginLeft="80dp">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEIGHT"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            >
+        </TextView>
+        <EditText
+            android:id="@+id/et_wt"
+            android:layout_width="95dp"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:hint="KG"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:layout_marginLeft="80dp">
+
+        </EditText>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_result"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="RESULT"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_margin="30dp">
+    </Button>
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Your status will appear here"
+        android:textSize="25dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="BMI = ?"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp">
+    </TextView>
+    <Button
+        android:id="@+id/bt_reset"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="RESET"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_margin="30dp">
+    </Button>
+    <Button
+        android:id="@+id/cardHomeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_bt2"
+        android:text="Home"/>
+
+
+</LinearLayout>
