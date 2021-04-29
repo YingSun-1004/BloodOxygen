@@ -123,6 +123,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         else
             return true;
     }
+
+    public List<DataBean> selectAllData(){
+        List<DataBean> dataBeanList = new ArrayList<>();
+        DataBean dataBean = new DataBean();
+        //初始化头部
+        dataBean.setCreateTime("measure time");
+        dataBean.setNumber("Measurement data");
+        dataBeanList.add(dataBean);
+        dataBean = new DataBean();
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        //创建游标对象
+        Cursor cursor = db.query("datas", null, null, null, null, null, "id ASC");
+        //利用游标遍历所有数据对象
+        while(cursor.moveToNext()){
+            dataBean.setId(cursor.getLong(cursor.getColumnIndex("id")));
+            dataBean.setNumber(cursor.getString(cursor.getColumnIndex("number")));
+            dataBean.setCreateTime(cursor.getString(cursor.getColumnIndex("create_time")));
+            dataBeanList.add(dataBean);
+            dataBean = new DataBean();
+        }
+        return dataBeanList;
+    }
+
     // constructor for checking name
     public Boolean checkName(String name){
         SQLiteDatabase db = this.getWritableDatabase();

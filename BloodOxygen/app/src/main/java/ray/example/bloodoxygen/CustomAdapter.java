@@ -33,11 +33,11 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.UserInfoVi
     public void onBindViewHolder(@NonNull UserInfoViewHolder holder, int position) {
         DataBean_information userInfo = usersList.get(position);
 
-        holder.name.setText(userInfo.name);
-        holder.age.setText("" + userInfo.age);
-        holder.sex.setText(userInfo.sex);
-        holder.ht.setText(userInfo.height.toString());
-        holder.wt.setText(userInfo.weight.toString());
+//        holder.name.setText(userInfo.name);
+        holder.age.setText("age: " + userInfo.age);
+//        holder.sex.setText(userInfo.sex);
+        holder.ht.setText("height: "+userInfo.height.toString());
+        holder.wt.setText("weight: "+userInfo.weight.toString());
     }
 
     @Override
@@ -50,9 +50,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.UserInfoVi
         public UserInfoViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            name = itemView.findViewById(R.id.name);
+//            name = itemView.findViewById(R.id.name);
             age = itemView.findViewById(R.id.age);
-            sex = itemView.findViewById(R.id.sex);
+//            sex = itemView.findViewById(R.id.sex);
             ht = itemView.findViewById(R.id.height);
             wt = itemView.findViewById(R.id.weight);
         }

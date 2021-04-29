@@ -19,7 +19,7 @@
         android:layout_below="@+id/profileimage"
         android:textColor="@color/black"
         android:textSize="30dp"
-        android:text=" Welcome User! "
+        android:text=" Welcome! "
         />
 
 </LinearLayout>

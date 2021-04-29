@@ -14,6 +14,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -46,6 +47,17 @@ public class NavigationActivity extends AppCompatActivity {
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
+        Button btn = (Button) findViewById(R.id.cardHomeBtn);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), CardActivity.class);
+                startActivity(intent);
+                drawerLayout.closeDrawer(GravityCompat.START);
+            }
+        });
+
         nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -57,10 +69,6 @@ public class NavigationActivity extends AppCompatActivity {
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
-                    case R.id.menu_dashboard:
-                        Toast.makeText(getApplicationContext(), "Dashboard Panel is Open", Toast.LENGTH_SHORT).show();
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
 
                     case R.id.menu_assessment:
                         Toast.makeText(getApplicationContext(), "Assessment Panel is Open", Toast.LENGTH_SHORT).show();
@@ -69,7 +77,7 @@ public class NavigationActivity extends AppCompatActivity {
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     case R.id.menu_view_data:
-                        Toast.makeText(getApplicationContext(), "Assessment Panel is Open", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Profile Panel is Open", Toast.LENGTH_SHORT).show();
                         Intent intent3 = new Intent(getApplicationContext(), displaydata.class);
                         startActivity(intent3);
                         drawerLayout.closeDrawer(GravityCompat.START);
@@ -79,13 +87,15 @@ public class NavigationActivity extends AppCompatActivity {
                         AlertDialog.Builder builder = new AlertDialog.Builder(NavigationActivity.this);
                         builder.setTitle("Sign out");
                         builder.setMessage("Are you sure you want to sign out?");
+                        builder.setCancelable(false);
                         builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                finish();
-                                System.exit(0);
+                                Intent intent4 = new Intent(getApplicationContext(), MainActivity.class);
+                                startActivity(intent4);
                             }
                         });
+
                         builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
@@ -94,7 +104,6 @@ public class NavigationActivity extends AppCompatActivity {
                         });
                         AlertDialog alertDialog = builder.create();
                         alertDialog.show();
-                        drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
                     }

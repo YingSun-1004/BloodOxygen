@@ -57,4 +57,11 @@ Press View History to view recent test results"
         android:layout_margin="20dp"
         android:layout_below="@id/Tv_2"
         android:text="View History"/>
+    <Button
+        android:id="@+id/bt_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/bt_Check"
+        android:text="Home"/>
 </RelativeLayout>

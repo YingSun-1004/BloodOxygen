@@ -3,4 +3,29 @@
 
     <string name="open">Open</string>
     <string name="close">Close</string>
+
+    <string name="covid_info">
+        Coronavirus disease (COVID 19) is an infectious disease caused by the coronovirus.
+
+        The most of the people who fall sick by encountering with the disease may experience mild to moderate symptoms and can recover without special treatment.
+
+    </string>
+
+    <string name="covid_info1">
+        The most common symptoms of people affected with corona virus are fever, dry cough, tiredness.
+        The less common symptoms are aches and pains, sore throat, diarrhoea, conjunctivitis, headache, loss of taste and smell.
+        The serious symptoms are difficult in breathing or shortness of breathe. These symptoms can confirm on being affected with the virus.
+    </string>
+
+    <string name="covid_info2">
+        Wash your hands frequently for 20+ seconds with soap and water.
+        Stay at home and limit contact with others.
+        Routinely clean frequently touched spaces in your home.
+        Seek medical help if you are suffering from a fever, cough or difficulty breathing.
+        Limit contact with pets and animals.
+    </string>
+
+    <string name="covid_info3">
+        Dont go to crowded areas. Dont touch your face. Dont be in close contact with others. Dont ignore symptoms. Dont leave your home, especially if sick.
+    </string>
 </resources>

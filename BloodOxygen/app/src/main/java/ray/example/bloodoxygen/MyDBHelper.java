@@ -9,14 +9,13 @@ import android.util.Log;
 
 public class MyDBHelper extends SQLiteOpenHelper {
 
-    public static final String DB_NANE="database_weight_record";
-    public static final String Table_User_NANE="table_user";
+    public static final String DB_NANE = "database_weight_record";
+    public static final String Table_User_NANE = "table_user";
 
 
     public MyDBHelper(Context context) {
         super(context, DB_NANE, null, 1);
     }
-
 
 
     @Override
@@ -29,7 +28,6 @@ public class MyDBHelper extends SQLiteOpenHelper {
 //                +"UserRealName"+" varchar(255),"
 //                +"UserPassWord"+" varchar(255)"
 //                +")");
-
 
 
     }
@@ -51,24 +49,26 @@ public class MyDBHelper extends SQLiteOpenHelper {
         else
             return true;
     }
+
     // constructor for checking username
-    public Boolean checkusername(String username){
+    public Boolean checkusername(String username) {
         SQLiteDatabase MyDB = this.getWritableDatabase();
-        Cursor cursor = MyDB.rawQuery("select * from users where username= ?" ,new String[] {username} );
-        if (cursor.getCount()>0)
-            return  true;
+        Cursor cursor = MyDB.rawQuery("select * from users where username= ?", new String[]{username});
+        if (cursor.getCount() > 0)
+            return true;
         else
-            return  false;
+            return false;
 
     }
+
     // constructor for checking password
-    public Boolean checkusernamepassword(String username, String password){
+    public Boolean checkusernamepassword(String username, String password) {
         SQLiteDatabase MyDB = this.getWritableDatabase();
-        Cursor cursor = MyDB.rawQuery("select * from users where username= ? and password = ?" ,new String[] {username,password} );
-        if (cursor.getCount()>0)
-            return  true;
+        Cursor cursor = MyDB.rawQuery("select * from users where username= ? and password = ?", new String[]{username, password});
+        if (cursor.getCount() > 0)
+            return true;
         else
-            return  false;
+            return false;
 
     }
 

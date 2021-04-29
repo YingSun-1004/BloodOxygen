@@ -10,6 +10,7 @@ import android.widget.Button;
 public class Add_Info_Page extends AppCompatActivity {
 
     Button Btn_info, Btn_test;
+    Button BT_home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class Add_Info_Page extends AppCompatActivity {
 
         Btn_info = findViewById(R.id.bt_Add);
         Btn_test = findViewById(R.id.bt_Test);
+        BT_home = findViewById(R.id.bt_home);
 
         Btn_info.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +33,13 @@ public class Add_Info_Page extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),Test.class);
+                startActivity(intent);
+            }
+        });
+        BT_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), NavigationActivity.class);
                 startActivity(intent);
             }
         });

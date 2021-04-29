@@ -54,4 +54,11 @@
         android:layout_margin="20dp"
         android:layout_below="@id/bt_Add"
         android:text="Begin Test"/>
+    <Button
+        android:id="@+id/bt_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@id/bt_Test"
+        android:text="Home"/>
 </RelativeLayout>

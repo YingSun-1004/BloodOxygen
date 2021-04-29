@@ -33,6 +33,121 @@
             android:text="Track your Blood Oxygen levels to help you stay healthy."
             android:textColor="@color/white"
             android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/checkimage"
+            android:layout_margin="15dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_nav"
+            android:src="@drawable/ic_baseline_check_circle_24" />
+
+
+        <TextView
+            android:id="@+id/tv_nav1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nav"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toEndOf="@+id/checkimage"
+            android:layout_toRightOf="@+id/checkimage"
+            android:text="Check your spo2 levels"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/tv_nav2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/tv_nav1"
+            android:text="Set a custom taget range and log to see how your oxygen levels trend"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <ImageView
+            android:id="@+id/checkimage2"
+            android:layout_margin="15dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_nav2"
+            android:src="@drawable/ic_baseline_check_circle_24" />
+
+        <TextView
+            android:id="@+id/tv_nav3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nav2"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toEndOf="@+id/checkimage2"
+            android:layout_toRightOf="@+id/checkimage"
+            android:text="Get helpful reminders"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/tv_nav4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/tv_nav3"
+            android:text="Set reminders to check your blood oxygen levels based on recomendations from your previous results"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <ImageView
+            android:id="@+id/checkimage3"
+            android:layout_margin="15dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_nav4"
+            android:src="@drawable/ic_baseline_check_circle_24" />
+
+        <TextView
+            android:id="@+id/tv_nav5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nav4"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toEndOf="@+id/checkimage3"
+            android:layout_toRightOf="@+id/checkimage"
+            android:text="Understand your body"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/tv_nav6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/tv_nav5"
+            android:text="See how your spo2 levels change throughout the day and react to physical activity, food and sleep"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/cardHomeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nav6"
+            android:layout_margin="10dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_bt2"
+            android:text="Home"/>
 
     </RelativeLayout>
 
